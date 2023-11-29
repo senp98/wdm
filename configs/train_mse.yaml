@@ -1,0 +1,43 @@
+---
+data_dir: "datasets/cifar_train"
+schedule_sampler: "uniform"
+lr: 1.0e-4
+weight_decay: 0.0
+lr_anneal_steps: 0
+batch_size: 32
+microbatch: -1  
+ema_rate: "0.99,0.999" 
+log_interval: 100
+save_interval: 10000
+use_fp16: False
+fp16_scale_growth: 1.0e-3
+
+image_size: 32
+num_channels: 128
+num_res_blocks: 3
+num_heads: 4
+num_heads_upsample: -1
+attention_resolutions: "16,8"
+dropout: 0.1
+learn_sigma: False
+sigma_small: False
+class_cond: False
+diffusion_steps: 1000
+noise_schedule: "linear"
+timestep_respacing: ""
+use_kl: False
+predict_xstart: False
+rescale_timesteps: False
+rescale_learned_sigmas: False
+use_checkpoint: False
+resume_checkpoint: 
+use_scale_shift_norm: False
+
+wm_embed: False
+wm_data_dir: 
+wm_batch_size:
+wdp_gamma1: 
+wdp_gamma2: 
+wdp_key: 
+wdp_trigger_type: 
+wdp_trigger_path: 

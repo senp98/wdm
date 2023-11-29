@@ -1,0 +1,40 @@
+---
+# model_and_diffusion_defaults
+image_size: 32
+num_channels: 128
+num_res_blocks: 3
+num_heads: 4
+num_heads_upsample: -1
+attention_resolutions: "16,8"
+dropout: 0.1
+learn_sigma: False
+sigma_small: False
+class_cond: False
+diffusion_steps: 1000
+noise_schedule: "linear"
+timestep_respacing: ""
+use_kl: False
+predict_xstart: False
+rescale_timesteps: False
+rescale_learned_sigmas: False
+use_checkpoint: 
+use_scale_shift_norm: False
+
+# sample defaults
+clip_denoised: True
+num_samples: 10000
+batch_size: 1250
+use_ddim: False
+model_path: # path to the model 
+progress: True
+
+# wdp defaults
+wdp_sample: True
+wdp_process_demo: False
+wdp_gamma1: 0.8
+wdp_gamma2: 0.2
+wdp_key: 1998
+wdp_trigger_type: 1
+wdp_trigger_path: "datasets/random_trigger.png"
+use_fp16: False
+weight_perturb_std: 0.0
