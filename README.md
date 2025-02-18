@@ -80,3 +80,16 @@ The evaluation is based on the [guided diffusion](https://github.com/openai/guid
 ```shell
 python scripts/evaluator.py <reference_batch> <evaluated_batch>
 ```
+
+
+## 7. Citation
+```
+@inproceedings{peng2025intellectual,
+  title={Intellectual property protection of diffusion models via the watermark diffusion process},
+  author={Peng, Sen and Chen, Yufei and Wang, Cong and Jia, Xiaohua},
+  booktitle={International Conference on Web Information Systems Engineering},
+  pages={290--305},
+  year={2025},
+  organization={Springer}
+}
+```
